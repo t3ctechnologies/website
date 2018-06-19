@@ -1,0 +1,71 @@
+body {
+  background-color: #313439;
+}
+
+section {
+  padding: 3rem 0;
+  background-color: white;
+  &:nth-child(even){
+    background-color: $color-lightgray;
+  }
+}
+
+h2 {
+  border-bottom: 4px solid $color-primary;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: $color-midgray;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+small {
+  display: inline-block;
+  color: $color-primary;
+}
+
+img {
+  margin: 0.5rem 0;
+}
+
+.row.gutters {
+  width: 100%;
+}
+
+.contain {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  @include breakpoint(sm) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.list-title {
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+}
+
+.list--unstyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-list {
+  dd:not(:last-child){
+    margin-bottom: 0.5rem;
+  }
+}

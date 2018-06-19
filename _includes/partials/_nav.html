@@ -1,0 +1,22 @@
+<section class="row between align-middle" id="siteNav" data-component="sticky">
+  <div class="col mobile-nav">
+    <a href="{% if page.url == '/' %}#home{% else %}/{% endif %}" class="logo"><img src="/img/t3c-transparent.svg" alt="T3C."></a>
+    <button class="show-sm" data-component="toggleme" data-target="#toggleNav" id="toggleNavButton">
+      <span class="kube-menu" aria-label="toggle site navigation"></span>
+    </button>
+  </div>
+  <div class="col hide-sm" id="toggleNav">
+    <nav class="tabs">
+      <ul>
+        <li {% if page.url == '/' %}class="activeliquid "{% endif %}><a href="{% if page.url != '/' %}/{% endif %}#home">HOME</a></li>
+        <li><a href="{% if page.url != '/' %}/{% endif %}#about">ABOUT US</a></li>
+        <li><a href="{% if page.url != '/' %}/{% endif %}#services">DEVOPS</a></li>
+				<li><a href="{% if page.url != '/' %}/{% endif %}#agile">AGILE</a></li>
+				<li><a href="{% if page.url != '/' %}/{% endif %}#cloud">CLOUD</a></li>
+        <li><a href="{% if page.url != '/' %}/{% endif %}#mobile">MOBILE</a></li>
+				<li><a href="{% if page.url != '/' %}/{% endif %}#bigdata">BIG DATA</a></li>
+        <li><a href="{% if page.url != '/' %}/{% endif %}#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>

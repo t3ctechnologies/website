@@ -1,0 +1,18 @@
+/*Kube Framework*/
+@import "kube/variables";
+@import "variables"; //custom variables
+@import "kube/mixins";
+@import "kube/components";
+
+/*Base Styles*/
+@import "base";
+
+/*Page Sections*/
+@import "sections/header";
+@import "sections/home";
+@import "sections/news";
+@import "sections/services";
+@import "sections/cloud";
+@import "sections/about";
+@import "sections/contact";
+@import "sections/footer";

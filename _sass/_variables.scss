@@ -1,0 +1,37 @@
+/*Colors*/
+$color-primary: #2DC0ED;
+$color-secondary: blue;
+$color-lightgray: #F2F4F4;
+$color-gray: #D2D4D4;
+
+/*Fonts*/
+$text-font-family: 'Roboto', 'Work Sans';
+$headings-font-family: 'Comfortaa', 'Domine', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+/*Text*/
+$font-size: 18px;
+$base-line: 1.2;
+
+$color-headings: inherit;
+//$heading-font-size-title: 60px !default;
+$heading-font-size-1: 2.5rem;
+$heading-font-size-2: 1.8rem;
+$heading-font-size-3: 1.3rem;
+$heading-font-size-4: 1.1rem;
+//$heading-font-size-5: 1rem;
+//$heading-font-size-6: 0.9rem;
+
+/*Buttons*/
+$color-button-primary: $color-primary;
+$color-button-secondary: $color-secondary;
+$button-font-size: 1rem;
+$button-border-radius: 0;
+$button-padding-tb: 0.8rem;
+$button-padding-rl: 1.5rem;
+
+/*Links*/
+$color-link: $color-primary;
+$color-link-hover: darken($color-primary, 10%);
+
+/*Grid*/
+$grid-gutter: 3rem;

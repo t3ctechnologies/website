@@ -1,0 +1,262 @@
+---
+---
+<!doctype html>
+<html>
+  {% include partials/_head.html %}
+
+  <body>
+    <header>
+      {% include partials/_nav.html %}
+
+      <section class="row" id="home">
+        <div class="row contain">
+          <div class="col col-7 content">
+            <h1>When ideas and vision meet</h1>
+            {% include content/header.html %}
+            <div class="button-group">
+              <a href="#services" class="button inverted">Our Services</a>
+              <a href="#contact" class="button inverted">Contact Us</a>
+            </div>
+          </div>
+          <div class="col col-5 decoration">
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="row" id="about">
+        <div class="row contain">
+          <div class="row gutters">
+            <div class="col col-6">
+              <h2>History</h2>
+              {% include content/about.html %}
+            </div>
+            <div class="col col-6">
+              <h2>News</h2>
+              <article>
+                {% for post in site.posts limit:1 %}
+                <h3>{{post.title}}</h3>
+                {{post.content}}
+                {% endfor %}
+              </article>
+              <a href="#contact" class="button">Contact Us for Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row" id="services">
+        <div class="col col-12 contain">
+          <h2>DevOps Capabilities</h2>
+					<h6> <i>Liberate performance and innovation from change. Rapidly. </i></h6>
+          <div class="row gutters">
+            <div class="col col-4">
+              <nav id="livetabs" data-component="tabs" data-live=".tab-live"></nav>
+            </div>
+
+            <div class="col col-7">
+							<div class="col col-12">
+	              <img src="/img/DevOps.png" alt="SAFe - Lean and agile combined.">
+	            </div>
+              <div id="devops" data-title="DevOps" class="tab-live">
+                <h3>DevOps</h3>
+                <p>Our DevOps tools and methodologies emcompass the entire gamut of build, release, monitoring, testing, security validation and compliance very early in your project cycles. Mature your pipelines quickly in small iterative steps. We provide a holistic approach with resiliency baked in, security and test compliant in a fully automated mode.</p>
+                <p>Build <b> DevSecOps </b> into your pipeline from the start and not as an afterthought</p>
+                <ul>
+                  <li>Our AWS certified exports can fast track your journey</li>
+									<li>Get Security compliance metrics very early in your release cycle with Industry Standard guidelines</li>
+
+                </ul>
+              </div>
+
+              <div id="continuous-integration" data-title="Continuous Integration" class="tab-live">
+                <h3>Continuous Integration</h3>
+                <p>While bugs are imminent, finding and fixing them should be streamlined into a continouous process.</p>
+                <p>Automatically build artifacts and verify your build wilh minimal or no manual intervention. Catch bugs and non-compliance very early in your release cycle so you dont have to fight these issues in production.</p>
+                <p class="list-title">Our expertise in this will help you:</p>
+                <ul>
+                  Intgrate frequently by enforcing the practice</br>
+                  Solve issues and problems quickly
+
+                </ul>
+              </div>
+
+              <div id="continuous-delivery" data-title="Continuous Delivery" class="tab-live">
+                <h3>Continuous Delivery</h3>
+                <p>Get assurance change is deployable at any time.</p>
+                <p>Ensure rigorous testing processes in multiple environments with ease with one-click deployments.</p>
+                <ul>
+									<li>Automate Unit, Patform, Functional and security compliance test at every build. </li>
+									<li>Auto deployment to lower environments </li>
+									<li>Post deploy verification ensures production ready code always available and ready </li>
+								</ul>
+              </div>
+
+              <div id="continuous-deployment" data-title="Continuous Deployment" class="tab-live">
+                <h3>Continous Deployment</h3>
+                <p>Gain confidence to deploy anytime with near zero downtime.</p>
+                <p class="list-title">Here are some things we can help you with:</p>
+                <ul>
+                  <li>Feature flagging </li>
+                  <li>Dark Deployments</li>
+
+                </ul>
+                <p>We can consult and provide improvement workshops.</p>
+              </div>
+
+              <div id="reliability-engineering" data-title="Reliability Engineering" class="tab-live">
+                <h3>Reliability Engineering</h3>
+                <p>We engineer our systems for breakdown in lower environments so we don't experience them in production.</p>
+                <p>Gain confidence simulating complex 'what if' scenarios on systems that is put into production</p>
+								<p>identify weaknesses and remediate them before they manifest in system-wide, aberrant behaviors</p>
+								<p class="list-title">We excel in these areas:</p>
+								<ul>
+	                <li>Identifying teady state behavior</li>
+	                <li>Running real world experiments in Production</li>
+	                <li>Automate, automate  and automate. Make the system self healing through a robust process loop</li>
+	                <li>Minimize the blast radius - Reduce effect and isolate the error to minimize impact to the entire system</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row" id="agile">
+        <div class="col col-12 contain">
+          <h2>Agile</h2>
+					<h6><i>Initiate and embrace change </i></h6>
+          <article class="row gutters">
+            <div class="col col-6">
+              <h3>SAFe methodologies</h3>
+              <img src="/img/SAFE.png" alt="SAFe - Lean and agile combined.">
+              <p>We synergize Lean and agile methodologies and integrated into our DevOps and Delivery pipelines. We are dedicated to providing the highest standard of the current processes to our clients.</p>
+              <p class="list-title">In addition to all regular services, our specialities include:</p>
+              <ul>
+                <li></li>
+                <li>Release Management Counsulting</li>
+                <li><strong>Call</strong> or <strong> Contact Us</strong> to accelerate your journey</li>
+              </ul>
+            </div>
+            <div class="col col-6">
+              <h3>Scrum</h3>
+							<img src="/img/Scrum_v2.png" alt="SAFe - Lean and agile combined.">
+              <p>We value our work and are committed to achieving the best outcome for each of our clients. We take the time necessary to make sure that all of your needs and expectations are met.</p>
+              <p><strong>Amazon Web Services (AWS)</strong> is our preferred cloud service. Out team brings a wide array of technologies and skillsets to bear in this space.</p>
+              <p class="list-title">Core specialties include:</p>
+              <ul>
+                <li>Release Management</li>
+                <li>Assessments</li>
+
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+			<section class="row" id="cloud">
+				<div class="col col-12 contain">
+					<h2>Cloud Expertise</h2>
+					<h6>Outlined for Business Outcomes </br>
+          Drive innovation and accelerate your company's growth with our full spectrum of cloud services. </h6>
+					<div class="row gutters">
+
+
+						<div class="col col-6">
+							<div id="migration" data-title="Migration">
+								<h3>Migration</h3>
+								<img src="/img/cloudmigration.png" alt="Cloud Adoption.">
+								<p>We help clients adopt a Cloud Migration of existing on-premises workloads. While all applications are not amenable for migration, we can assess best choices for reducing your TCO. </p>
+
+								<ul>
+									Lift and Shift </br>
+	                Hybrid adoption
+								</ul>
+							</div>
+            </div>
+						<div class="col col-6">
+							<div id="adoption" data-title="adoption" >
+								<h3>Cloud Adoption</h3>
+								<img src="/img/cloudadoption.png" alt="Cloud Adoption.">
+								<p>Geared more towards newer green field workloads, we can help design and implment a cloud first and AWS cloud native approach to fast track your business needs. </p>
+
+								<p class="list-title">We follow in principle..</p>
+								<ul>
+									Cloud agnostic and Cloud native implementations win opensource first </br>
+									Enhancements with best of breed tools and technologies
+
+								</ul>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="row" id="mobile">
+        <div class="row contain">
+          <div class="row gutters">
+            <div class="col col-6">
+              <h2>Mobile</h2>
+							<h6><i>Design and visualize your way to fascinating applications</i></h6>
+							<p>We excel in end-to-end mobile strategy and services to optimize mobile user experience. </p>
+              <p>Our <a href="#devops">DevOps </a> process aggregates process to deliver a mobile first experience.
+            </div>
+						<div class="col col-6">
+							<img src="/img/mobile.png" alt="Mobile.">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+			<section class="row" id="bigdata">
+
+        <div class="row contain">
+					<h2>Big Data</h2>
+
+					<div class="col col-6">
+						<img src="/img/big_data.png" alt="Mobile.">
+					</div>
+
+						<h6><i>Accelerate your data-to-action quest</i></h6>
+          <div class="row gutters">
+						<div class="col col-6">
+              <h3>Aggregate and Visualize</h3>
+							<p> Combine <b>SQL</b>, <b> NoSQL </b> and other data formtats in one single entity <p>
+						  <p> Identify, define and extract meaningful data <p>
+              <p>
+            </div>
+
+            <div class="col col-6">
+              <h3>Analyze and take action</h3>
+							<p>Focus on rendering business outcome; not just managing data </p>
+							<p>Take timely action on data. Realize business value through big data </p>
+							<p>Improve time to market to enabling real-time realization of data across their disparate data systems. </p>
+            </div>
+        </div>
+      </section>
+      <section class="row" id="contact">
+        <div class="row contain">
+          <div class="row gutters">
+            <div class="col col-6">
+              <h2>Contact</h2>
+              {% include content/contact.html %}
+            </div>
+            <div class="col col-6">
+              <h2>About</h2>
+              {% include content/about.html %}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include partials/_footer.html %}
+    {% include partials/_scripts.html %}
+
+  </body>
+</html>

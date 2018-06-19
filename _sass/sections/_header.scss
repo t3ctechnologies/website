@@ -1,0 +1,51 @@
+header {
+  #siteNav {
+    padding: 0;
+    background-color: white;
+    &.scrolled {
+      border-bottom: 1px solid $color-gray;
+    }
+  }
+  .mobile-nav {
+    @include breakpoint(sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .logo {
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+  .tabs {
+    font-size: 0.9rem;
+    ul {
+      border: none;
+      li {
+        margin: 0;
+        border: none;
+        transition: 0.3s;
+        &:hover {
+          background-color: $color-lightgray;
+          color: $color-gray;
+        }
+        &.active {
+          background-color: $color-primary;
+          a {
+            color: white;
+            border: none;
+          }
+        }
+        a {
+          display: block;
+          padding: 1rem;
+          &:hover {
+            text-decoration: none;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#services {
+  nav {
+    li {
+      color: $color-primary;
+      background-color: white;
+      &:not(:last-child){
+        margin-bottom: 0.5rem;
+      }
+      &.active {
+        background-color: $color-primary;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        padding: 1rem;
+      }
+    }
+  }
+}
