@@ -1,19 +1,51 @@
----
----
 <!doctype html>
 <html>
-  {% include partials/_head.html %}
+  <head>
+  <meta charset="utf-8" lang="en">
+  <title>T3C Technologies LLC| Ideas - Meet Vision</title>
+  <meta name="description" content="T3C Technoligies a cloud, agile, mobile and big data consulting firm">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Work+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
 
   <body>
     <header>
-      {% include partials/_nav.html %}
+      <section class="row between align-middle" id="siteNav" data-component="sticky">
+  <div class="col mobile-nav">
+    <a href="#home" class="logo"><img src="/img/t3c-transparent.svg" alt="T3C."></a>
+    <button class="show-sm" data-component="toggleme" data-target="#toggleNav" id="toggleNavButton">
+      <span class="kube-menu" aria-label="toggle site navigation"></span>
+    </button>
+  </div>
+  <div class="col hide-sm" id="toggleNav">
+    <nav class="tabs">
+      <ul>
+        <li class="activeliquid "><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">DEVOPS</a></li>
+				<li><a href="#agile">AGILE</a></li>
+				<li><a href="#cloud">CLOUD</a></li>
+        <li><a href="#mobile">MOBILE</a></li>
+				<li><a href="#bigdata">BIG DATA</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
 
       <section class="row" id="home">
         <div class="row contain">
           <div class="col col-7 content">
             <div>
             <h1>When ideas and vision meet</h1>
-            {% include content/header.html %}
+            <p>Small teams, unique skills and innovation to realize your vision. </p>
+<p>T3C promises to bridge our deep operation knowledge rooted in critical legacy systems with modern best of breed DevOps centric agile methodology on cloud. Count on us to assist you to navigate the agile and DevOps adaptation- from
+Consultative to Transformation and Implementation.</p>
+<p>We focus on deliverables to achieve best results in a collaborative manner at high frequency.</p>
+
             <div class="button-group">
               <a href="#services" class="button inverted">Our Services</a>
               <a href="#contact" class="button inverted">Contact Us</a>
@@ -32,15 +64,41 @@
           <div class="row gutters">
             <div class="col col-6">
               <h2>History</h2>
-              {% include content/about.html %} 
+              <dl class="hours-list">
+  <dt>About us</dt>
+  <dd>A small business delivering focussed solutions. Please contact us to get in touch</dd>
+
+
+
+  <dt>NAICS Codes</dt>
+  <dd>
+    <ul class="list--unstyle">
+      <li>541511 Custom Computer Programming Services.</li>
+      <li>541512 Computer Systems Design Services</li>
+			<li>541618 Other Management Consulting Services</li>
+      <li>541519 Other Computer related Services</li>
+    </ul>
+  </dd>
+  <dt>DUNS Number</dt>
+  <dd>080500293</dd>
+</dl>
+ 
             </div>
             <div class="col col-6">
               <h2>News</h2>
               <article>
-                {% for post in site.posts limit:1 %}
-                <h3>{{post.title}}</h3>
-                {{post.content}}
-                {% endfor %}
+                
+                <h3>We are a registered AWS Partner!</h3>
+                <p>We are an AWS registered partner! We can help you with the following</p>
+
+<p><strong>Cradle to grave assistance in :</strong></p>
+<ul>
+  <li>Cloud Assessments</li>
+  <li>Proof of Concepts</li>
+  <li>Fork Lift and hybrid migrations</li>
+</ul>
+
+                
               </article>
               <a href="#contact" class="button">Contact Us for Details</a>
             </div>
@@ -251,19 +309,66 @@
           <div class="row gutters">
             <div class="col col-6">
               <h2>Contact</h2>
-              {% include content/contact.html %}
+              <p>
+  300 E Lombard Street Suite 840<br>
+  Baltimore, MD 21202
+</p>
+<p>
+  Phone: <a href="tel:1-410-440-6017">(410) 440-6017</a><br>
+
+</p>
+
             </div>
             <div class="col col-6">
               <h2>About</h2>
-              {% include content/about.html %}
+              <dl class="hours-list">
+  <dt>About us</dt>
+  <dd>A small business delivering focussed solutions. Please contact us to get in touch</dd>
+
+
+
+  <dt>NAICS Codes</dt>
+  <dd>
+    <ul class="list--unstyle">
+      <li>541511 Custom Computer Programming Services.</li>
+      <li>541512 Computer Systems Design Services</li>
+			<li>541618 Other Management Consulting Services</li>
+      <li>541519 Other Computer related Services</li>
+    </ul>
+  </dd>
+  <dt>DUNS Number</dt>
+  <dd>080500293</dd>
+</dl>
+
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    {% include partials/_footer.html %}
-    {% include partials/_scripts.html %}
+    <footer class="row">
+  <div class="row contain">
+    <div class="col col-6">
+      <h4>About T3C Technologies</h4>
+<p>© 2018 T3C Technologies LLC., All rights reserved.</p>
+
+    </div>
+  </div>
+</footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6807769-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6807769-1');
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/main.js"></script>
+
 
   </body>
 </html>
