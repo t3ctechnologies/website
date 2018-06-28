@@ -2063,7 +2063,7 @@ body {
   background-color: #313439; }
 
 section {
-  padding: 3rem 0;
+  padding: 6rem 0;
   background-color: white; }
   section:nth-child(even) {
     background-color: #F2F4F4; }
@@ -2233,12 +2233,3 @@ footer {
     font-weight: 300;
     font-size: 0.9rem;
     margin-bottom: 0; }
-
-    .mainHome{
-      padding: 0 60px;
-    }
-@media (max-width: 425px){
-  .mainHome{
-    padding: 0 10px;
-  }
-}

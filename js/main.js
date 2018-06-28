@@ -8,8 +8,9 @@
 {% include js/Toggleme/Kube.Toggleme.js %}
 
 function changeSiteNavActive(newActive){
-  $('#siteNav .active').removeClass('active');
-  $("#siteNav [href='"+newActive+"']").parent().addClass('active');
+   $('#siteNav .active').removeClass('active');
+   $("#siteNav [href='"+newActive+"']").parent().addClass('active');
+    
 }
 
 $(function(){
@@ -25,11 +26,11 @@ $(function(){
     $('#siteNav').removeClass("scrolled");
   });
 
-  $("#siteNav li").on("click",function(){
-    if($("[data-target='#toggleNav']").toggleme('isOpened')){
-      $("[data-target='#toggleNav']").toggleme('close');
-    }
-  });
+  // $("#siteNav li").on("click",function(){
+  //   if($("[data-target='#toggleNav']").toggleme('isOpened')){
+  //     $("[data-target='#toggleNav']").toggleme('close');
+  //   }
+  // });
 
   /*Smooth scroll all anchor links*/
   $("a[href*='#']").not("#livetabs ul li a").click(function(e) {
